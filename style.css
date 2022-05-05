@@ -45,3 +45,12 @@ main {
   display: flex;
   justify-content: end;
 }
+
+#campo-email-house {
+  display: flex;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+}
