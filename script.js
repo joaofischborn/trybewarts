@@ -15,3 +15,13 @@ button.addEventListener('click', () => {
 agreeInput.addEventListener('click', () => {
   submitButton.disabled = !agreeInput.checked;
 });
+
+const textArea = document.querySelector('#textarea');
+const spanCaract = document.querySelector('#counter');
+const limit = 500;
+
+textArea.addEventListener('keyup', () => {
+  const quantCaract = textArea.value.length;
+  const restante = limit - quantCaract;
+  spanCaract.innerHTML = restante;
+});
