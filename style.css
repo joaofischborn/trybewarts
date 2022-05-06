@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Open Sans, sans-serif;
+  height: 100vh;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+header {
+  max-width: 2000px;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -14,43 +36,183 @@
 }
 
 .trybewarts-header-logo {
-  width: 80px;
-  height: 80px;
+  height: 65px;
+  padding-left: 20px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 40px;
 }
 
 .trybewarts-login {
   display: flex;
+  gap: 10px;
+}
+
+#email , #password {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(90, 24, 154);
+  color: white;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(123, 44, 191);
+}
+
+#login-button {
+  margin-right: 10px;
 }
 
 main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-title {
+  color: rgb(59, 59, 59);
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
 
+#input-name , #input-lastname , #input-email {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  flex: 1;
 }
 
 #nome-sobrenome {
   display: flex;
-}
-
-#aside {
-  display: flex;
-  justify-content: end;
+  gap: 10px;
+  width: 80%;
 }
 
 #campo-email-house {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+
+#house {
+  height: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  width: 20%;
+}
+
+#label-family , #label-content {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.radioandCheckbox {
+  display: flex;
+  width: 80%;
+  padding-bottom: 15px;
 }
 
 #radio {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+  flex-basis: 50%;
+}
+
+.labelOption:not( :last-child ) {
+  padding-bottom: 15px;
+}
+
+#checkboxInputs {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.checkboxValue {
+  flex-basis: 33%;
+}
+
+.rate {
+  width: 80%;
+}
+
+.rateOpt {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#label-rate {
+  display: block;
+  padding-bottom: 6px;
+  font-weight: 600;
+}
+
+.text-area {
+  width: 80%;
+}
+
+.textarea {
+  display: block;
+  font-weight: 600;
+}
+
+#textarea {
+  width: 100%;
+}
+
+#submit-btn {
+  width: 20%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+#submit-btn:disabled {
+  background-color: rgb(226, 226, 226);
+}
+
+#aside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  color: white;
+  font-size: 14px;
+  background-color: rgb(22, 26, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6%;
+  margin-top: 40px;
 }
