@@ -188,6 +188,11 @@ main {
   width: 100%;
 }
 
+.information {
+  width: 80%;
+  word-break: break-word;
+}
+
 #submit-btn {
   width: 20%;
   padding-top: 11px;
