@@ -67,3 +67,4 @@ submitButton.addEventListener('click', () => {
   p.innerHTML = `${p.innerHTML} <br> Avaliação: ${rate} <br> Observações: ${comment}`;
   form.appendChild(p);
 });
+// Projeto Finalizado!
